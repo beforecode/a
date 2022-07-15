@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Dropy Getty";
+const description = "We are very proud to present this collection to everyone who loves dogs and their breeding around the world because, as it is said, “a dog is man’s best friend”, We have launched 5,000 works of art that represent the love and passion for dogs and the great ambition to achieve dreams and what we love in life, also we would like to start dogs compititions and fastivals, you can own a work of art now if you are really a dog lover";
+const baseUri = "ipfs://QmNZupi2qgBVgWQYBw8su1g3tQ4YswufXuQfkUTvdeTExH";
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "DG",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
-  external_url: "https://www.youtube.com/c/hashlipsnft",
+  external_url: "www.droopyGetty.com",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0xcEd43a40B223D06ADD5891b1F0393AE9dCFe2a1D",
       share: 100,
     },
   ],
@@ -24,18 +24,19 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 5000,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: 'Background'},
+      { name: 'Photo'},
+      { name: 'Eyes'},
+      { name: 'Hat' },
+      { name: 'Mouth'},
+      { name: 'Shirt'},
     ],
   },
 ];
+
+    
 
 const shuffleLayerConfigurations = false;
 
